@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+    let ano = Number(prompt(`Informe o preço do produto`).trim().replace(",","."));
+    let porte =
+
+    (preco <= 280) ? preco = preco * 1.2
+    : (280 < preco && preco <= 700) ? preco = preco * 1.15
+    : (700 < preco && preco <= 1500) ? preco = preco * 1.1
+    : (preco > 1500) ? preco = preco * 1.05
+    : document.write(`valor inválido`)
+
+    document.write(`O preço do produto com aumento é ${preco.toFixed(2).replace(".",".")}`);
+</script>

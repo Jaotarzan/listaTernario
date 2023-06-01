@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+    let valor1 = Number(prompt(`Informe um valor inteiro`).trim());
+    let valor2 = Number(prompt(`Informe outro valor inteiro`).trim());
+    let mensagem = ``;
+
+    (Number.isInteger(valor1) && Number.isInteger(valor2)) ? (valor1 > valor2) ? mensagem = `${valor1} é o maior`
+    : (valor1 < valor2) ? mensagem = `${valor2} é o maior`
+    : mensagem = `Os 2 tem o mesmo valor`
+    : mensagem = `qual parte de NÚMERO INTEIRO você não entendeu?`;
+
+    document.write(mensagem);
+</script>

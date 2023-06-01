@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<script>
+    let idade = Number(prompt(`Informe seu ano de nascimento`).trim())
+    mensagem = ``
+    idade = new Date().getFullYear() - idade;
+    (idade >= 16) ? mensagem = `Voce tem idade o suficiente para votar`
+    : (idade < 16 && idade > 0) ? mensagem = `Você não tem idade o suficiente para votar`
+    : mensagem = `Valor inválido`
+    
+    document.write(mensagem)
+</script>

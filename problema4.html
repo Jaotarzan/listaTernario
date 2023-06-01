@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<script>
+    let letra = prompt(`Informe um caractere`).trim().toLowerCase();
+    let mensagem = ``;
+
+    (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") ? mensagem = `É uma vogal`
+    : mensagem = `Não é uma vogal`;
+
+    document.write(mensagem);
+</script>

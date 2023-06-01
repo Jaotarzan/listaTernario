@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<script>
+    let idade = Number(prompt(`Informe a sua idade`).trim());
+    let mesagem = ``
+    let difereca = 18 - idade;
+    (idade >= 18) ? mesagem = `Você atingiu a maioridade`
+    : (idade < 18 && idade > 0) ? mesagem = `Ainda faltam ${difereca} anos para você atingir a maioridade`
+    : mesagem = `Valor inválido`
+    
+    document.write(mesagem)
+</script>
