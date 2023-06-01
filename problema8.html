@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+    let litros = Number(prompt(`Informe quantos litros de gasolina são nescessários para chegar ao seu trabalho`).trim().replace(",","."));
+    let preco = Number(prompt(`Informe o preço do combustível`).trim().replace(",","."));
+    let onibus = Number(prompt(`Informe o preço da passagem do transporte público`).trim().replace(",","."));
+
+    preco = litros * preco * 2;
+    onibus = onibus * 2;
+
+    (preco > onibus) ? document.write(`O meio de transporte mais barato é o transporte publico. Será nescessário gastar ${onibus.toFixed(2).replace(".",",")}`)
+    : (onibus > preco) ? document.write(`O meio de transporte mais barato é ir por conta própria. Será nescessário gastar ${preco.toFixed(2).replace(".",",")}`)
+    : (onibus == preco) ? document.write(`Ambos terão gasto iguais`)
+    : document.write(`Valor inválido`)
+</script>

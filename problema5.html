@@ -2,11 +2,9 @@
 <script>
     let preco = Number(prompt(`Informe o preço do produto`).trim().replace(",","."));
 
-    (preco <= 280) ? preco = preco * 1.2
-    : (280 < preco && preco <= 700) ? preco = preco * 1.15
-    : (700 < preco && preco <= 1500) ? preco = preco * 1.1
-    : (preco > 1500) ? preco = preco * 1.05
-    : document.write(`valor inválido`)
-
-    document.write(`O preço do produto com aumento é ${preco.toFixed(2).replace(".",".")}`);
+    (preco <= 280) ? document.write(`O preço do produto com aumento é ${(preco * 1.2).toFixed(2).replace(".",",")}`)
+    : (preco > 280 && preco <= 700) ? document.write(`O preço do produto com aumento é ${(preco * 1.15).toFixed(2).replace(".",",")}`)
+    : (preco > 700 && preco <= 1500) ? document.write(`O preço do produto com aumento é ${(preco * 1.1).toFixed(2).replace(".",",")}`)
+    : (preco > 1500) ? document.write(`O preço do produto com aumento é ${(preco * 1.05).toFixed(2).replace(".",",")}`)
+    : document.write(`Valor inválido`)
 </script>

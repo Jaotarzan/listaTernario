@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<script>
+    let horas = Number(prompt(`Informe quantas horas você trabalha por semana`).trim().replace(",","."));
+    let ganho = Number(prompt(`Informe quanto você ganha por hora`).trim().replace(",","."));
+
+    (horas <= 45) ? document.write(`o seu salário será ${(ganho * horas).toFixed(2).replace(".",",")} e ganhará ${ganho.toFixed(2).replace(".",",")} por hora`)
+    : (horas > 45 && horas <= 60) ? document.write(`o seu salário será ${(ganho * horas * 1.2).toFixed(2).replace(".",",")} e ganhará ${(ganho * horas * 1.2 / horas).toFixed(2).replace(".",",")} por hora`)
+    : (horas > 60) ? document.write(`o seu salário será ${(ganho * horas * 1.3).toFixed(2).replace(".",",")} e ganhará ${(ganho * horas * 1.3 / horas).toFixed(2).replace(".",",")} por hora`)
+    : document.write(`Valores inválidos`)
+</script>

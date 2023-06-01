@@ -1,13 +1,11 @@
 <meta charset="UTF-8">
 <script>
-    let ano = Number(prompt(`Informe o preço do produto`).trim().replace(",","."));
-    let porte =
+    let idade = Number(prompt(`Informe a idade de seu cachorro`).trim());
+    let porte = prompt(`Informe o porte de seu cachorro. (Use P para pequeno, M para médio e G para grande)`).trim().toLowerCase();
 
-    (preco <= 280) ? preco = preco * 1.2
-    : (280 < preco && preco <= 700) ? preco = preco * 1.15
-    : (700 < preco && preco <= 1500) ? preco = preco * 1.1
-    : (preco > 1500) ? preco = preco * 1.05
-    : document.write(`valor inválido`)
-
-    document.write(`O preço do produto com aumento é ${preco.toFixed(2).replace(".",".")}`);
+    (idade > 0) ? (porte == "p") ? document.write(`A idade de seu cachorro é ${idade * 5}`)
+    : (porte == "m") ? document.write(`A idade de seu cachorro é ${idade * 6}`)
+    : (porte == "g") ? document.write(`A idade de seu cachorro é ${idade * 7}`)
+    : document.write(`Porte inválido`)
+    : document.write(`Idade inválida`)
 </script>

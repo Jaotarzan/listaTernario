@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<script>
+    let nota = Number(prompt(`Informe a sua nota`).trim().replace(",","."));
+
+    (nota <= 10 && nota >= 9) ? document.write(`Você tirou um A!`)
+    : (nota < 9 && nota >= 8) ? document.write(`Você tirou um B!`)
+    : (nota < 8 && nota >= 7) ? document.write(`Você tirou um C!`)
+    : (nota < 7 && nota >= 6) ? document.write(`Você tirou um D!`)
+    : (nota < 6) ? document.write(`Você tirou um E!`)
+    : document.write(`Nota inválida`)
+</script>
