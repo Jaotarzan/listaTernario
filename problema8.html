@@ -1,14 +1,21 @@
 <meta charset="UTF-8">
 <script>
-    let litros = Number(prompt(`Informe quantos litros de gasolina são nescessários para chegar ao seu trabalho`).trim().replace(",","."));
-    let preco = Number(prompt(`Informe o preço do combustível`).trim().replace(",","."));
-    let onibus = Number(prompt(`Informe o preço da passagem do transporte público`).trim().replace(",","."));
+   /*USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO
+    
+    Problema: Taxa de Juros
+    Peça para o usuário informar o preço da casa que deseja comprar. Peça também para ele informar a quantidade de anos que deseja financiar.
+    Considere que:
+    Se a quantidade de anos for 1 (apenas um), não terá diferença no preço.
+    Se a quantidade de anos for até 12 (inclusive), o juro a ser aplicado será de 15% (15/100) sobre o preço da casa.
+    Se a quantidade de anos for até 24 (inclusive), o juro a ser aplicado será de 30% (30/100) sobre o preço da casa.
+    Se a quantidade de anos for superior a 24, o sistema informará que não é possível financiar.
+    Apresente o preço final da casa.
+    */
 
-    preco = litros * preco * 2;
-    onibus = onibus * 2;
+    //Entrada
 
-    (preco > onibus) ? document.write(`O meio de transporte mais barato é o transporte publico. Será nescessário gastar ${onibus.toFixed(2).replace(".",",")}`)
-    : (onibus > preco) ? document.write(`O meio de transporte mais barato é ir por conta própria. Será nescessário gastar ${preco.toFixed(2).replace(".",",")}`)
-    : (onibus == preco) ? document.write(`Ambos terão gasto iguais`)
-    : document.write(`Valor inválido`)
+   //processamento
+
+
+   //saída
 </script>
